@@ -52,7 +52,7 @@ const ContactPage = () => {
         transition={{ duration: 0.6 }}
         className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-2xl border-t-4 border-yellow-500"
       >
-        <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-6">
+        <h2 className="text-3xl font-edu italic font-bold text-gray-800 text-center mb-6">
           Get in <span className="text-yellow-600">Touch</span>
         </h2>
         <p className="text-center text-gray-500 mb-8">

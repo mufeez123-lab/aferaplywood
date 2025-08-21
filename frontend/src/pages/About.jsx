@@ -53,29 +53,27 @@ const About = () => {
           className="text-3xl md:text-4xl font-playfair text-yellow-700 italic text-center mb-4"
           variants={item}
         >
-          <span className="text-4xl font-bold text-gray-800">About</span>
+          <span className="text-4xl  font-edu  text-gray-800">Our Vision & Values</span>
         </motion.h1>
 
         {/* Logo */}
         <motion.img
           src={logo}
           alt="Afera Logo"
-          className="w-56 h-auto mb-6"
+          className="w-56 h-auto mb-0"
           variants={item}
         />
 
         {/* Description */}
-        <div className="max-w-3xl mx-auto text-center">
-          {descriptionLines.map((line, index) => (
-            <motion.p
-              key={index}
-              className="text-lg md:text-xl text-gray-700 leading-relaxed tracking-wide mb-2"
-              variants={item}
-            >
-              {line}
-            </motion.p>
-          ))}
-        </div>
+       <div className="max-w-3xl mx-auto font-edu text-center">
+  <motion.p
+    className="text-lg md:text-xl text-gray-700  font-edu italic leading-relaxed tracking-wide mb-2"
+    variants={item}
+  >
+    Afera Plywood offers premium-quality plywood solutions designed for durability, style, and modern interiors. Trusted by thousands of customers, our products ensure superior performance. We combine innovation with craftsmanship to deliver unmatched quality.
+  </motion.p>
+</div>
+
       </motion.div>
 
       {/* Vision Section */}
@@ -88,7 +86,7 @@ const About = () => {
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+          <h2 className="text-3xl font-edu italic mb-4">Our Vision</h2>
           <p className="text-gray-700 leading-relaxed">
             Our vision is to rise above the flaws and bring new possibilities in
             the plywood industry. ...
@@ -122,7 +120,7 @@ const About = () => {
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+          <h2 className="text-3xl font-edu italic mb-4">Our Mission</h2>
           <p className="text-gray-700 leading-relaxed">
             We aim to provide top-quality plywood while maintaining the well-being of
             our workforce and sustainable production methods. Every sheet we deliver
@@ -161,7 +159,7 @@ const About = () => {
             quality. Our journey has been one of excellence, innovation, and
             customer satisfaction, which fills me with pride.
           </p>
-          <p className="text-gray-600 font-semibold">Kaleel, Chairman</p>
+          <p className="text-gray-600 font-edu italic ">Kaleel, Chairman</p>
         </motion.div>
 
         {/* Image */}

@@ -34,10 +34,10 @@ const Brands = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-5xl font-bold text-yellow-500 mb-6">
+        <h1 className="text-5xl font-edu italic font-bold text-yellow-500 mb-6">
           Brands We Work With
         </h1>
-        <p className="text-lg text-gray-700">
+        <p className="text-lg font-edu italic text-gray-700">
           We proudly collaborate with leading **plywood & interior brands** to
           ensure top-notch quality and reliability in every project.
         </p>
@@ -70,7 +70,7 @@ const Brands = () => {
               <h2 className="text-3xl font-semibold text-yellow-600 mb-4">
                 {brand.name}
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg font-edu italic leading-relaxed">
                 {brand.desc}
               </p>
             </div>

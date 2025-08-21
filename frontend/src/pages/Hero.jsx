@@ -55,15 +55,16 @@ export default function Hero() {
 
         {/* Animated text content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4 max-w-4xl mx-auto text-center">
-          <motion.img
-            src="/images/aferalogo.png"
-            alt="Afera Logo"
-            className="w-70 sm:w-56 mx-auto mb-0 mt-72 md:mt-0"
-            style={{ filter: "invert(100%)" }}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          />
+         <motion.img
+  src="/images/aferalogo.png"
+  alt="Afera Logo"
+  className="w-70 sm:w-56 mx-auto mt-20 md:mt-0 mb-0"
+  style={{ filter: "invert(100%)" }}
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+/>
+
 
           <AnimatePresence mode="wait">
             <motion.h1

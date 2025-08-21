@@ -50,7 +50,7 @@ const Services = () => {
   viewport={{ once: false, amount: 0.2 }}
 >
   <h2 className="text-3xl md:text-4xl font-bold text-yellow-600">
-    Our Services
+    Solutions We Offer
   </h2>
   <div className="mt-2 w-24 h-1 bg-yellow-600 mx-auto rounded"></div>
 </motion.div>
@@ -75,7 +75,7 @@ const Services = () => {
               {service.title}
             </h3>
             {/* Description */}
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm font-edu italic leading-relaxed">
               {service.description}
             </p>
           </motion.div>

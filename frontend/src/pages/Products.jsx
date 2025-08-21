@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 const products = [
   { id: 1, image: "/images/afera4.jpg" },
   { id: 2, image: "/images/afera5.jpg" },
-  { id: 3, image: "/images/afera.jpg" },
-  { id: 4, image: "/images/afera.jpg" },
-  { id: 5, image: "/images/afera.jpg" },
-  {
-    id: 6,
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-  },
+  { id: 3, image: "/images/afera6.jpg" },
+  { id: 4, image: "/images/afera7.jpg" },
+  { id: 5, image: "/images/afera8.jpg" },
+  {id: 6,  image:"/images/afera9.jpg"  },
+  {id: 7,  image:"/images/afera10.jpg"  },
+  {id: 8,  image:"/images/afera11.jpg"  },
+  {id: 9,  image:"/images/afera12.jpg"  },
+  {id: 10,  image:"/images/afera13.jpg"  },
+  {id: 11,  image:"/images/afera14.jpg"  },
+ 
 ];
 
 const fadeUpVariant = {
@@ -23,8 +25,8 @@ const Products = () => {
   return (
     <div className="w-full bg-white min-h-screen mt-10">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center py-10 text-yellow-500">
-        
+      <h2 className="text-3xl md:text-4xl font-edu italic font-bold text-center py-10 text-yellow-500">
+        Solutions We Offer
       </h2>
 
       {/* Product Grid */}

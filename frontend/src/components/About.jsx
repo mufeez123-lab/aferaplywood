@@ -39,7 +39,7 @@ const HeroSection = () => {
 
         {/* Paragraph */}
         <motion.p
-          className="text-gray-700 text-lg text-center max-w-md"
+          className="text-gray-700 text-lg font-edu italic text-center max-w-md"
           variants={fadeUpItem}
         >
           High-quality plywood solutions with durability and style. Crafted to
@@ -82,7 +82,7 @@ const HeroSection = () => {
           >
             Why Choose Afera?
           </motion.h3>
-          <motion.p className="text-sm" variants={fadeUpItem}>
+          <motion.p className="text-sm font-edu italic" variants={fadeUpItem}>
             Our plywood is durable, reliable, and trusted by thousands of
             customers. Quality and style in every sheet.
           </motion.p>
