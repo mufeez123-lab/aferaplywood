@@ -80,11 +80,11 @@ export default function Hero() {
         </div>
 
         {/* Floating buttons */}
-        <div className="fixed top-1/3 right-0 flex flex-col gap-2 z-20">
+        <div className="fixed top-1/3 right-0  flex flex-col gap-1 z-20">
           {/* Enquire Now */}
           <Link
             to="/contact"
-            className="bg-transparent border-t border-l border-b hover:bg-red-700 text-white px-2 py-3 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
+            className="bg-red-700 border-t border-l border-b hover:bg-red-900 text-white px-2 py-3 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
           >
             Enquire Now
           </Link>
@@ -100,10 +100,10 @@ export default function Hero() {
 
           {/* WhatsApp Button */}
           <a
-  href="https://wa.me/911234567890"
+  href="https://wa.me/918951555551?text=Hello%20I%20am%20interested%20in%20your%20products"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-[#25D366] border-t border-l border-b hover:bg-green-500 text-white px-2 py-2 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
+  className="bg-green-500 border-t border-l border-b hover:bg-green-700 text-white px-2 py-2 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
 >
   <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5" />
 </a>
