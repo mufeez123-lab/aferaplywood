@@ -19,7 +19,7 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-6 uppercase font-bold text-sm">
             <a href="/" className="hover:text-yellow-300 transition duration-300">Home</a>
             <a href="/about" className="hover:text-yellow-300 transition duration-300">About Us</a>
-            <a href="/products" className="hover:text-yellow-300 transition duration-300">Products</a>
+            <a href="/products" className="hover:text-yellow-300 transition duration-300">WhyAfera</a>
             <a href="/brands" className="hover:text-yellow-300 transition duration-300">Brands</a>
        
             <a href="/contact" className="hover:text-yellow-300 transition duration-300">Contact</a>
@@ -78,7 +78,7 @@ export default function Navbar() {
           <div className="pt-2 pb-4 space-y-2">
             <a href="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">Home</a>
             <a href="/about" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">About Us</a>
-            <a href="/products" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">Products</a>
+            <a href="/products" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">WhyAfera</a>
             <a href="/brands" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">Brands</a>
             {/* <a href="/why-afera" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">Why Afera</a> */}
             <a href="/contact" onClick={() => setIsOpen(false)} className="block hover:text-yellow-300 transition duration-300">Contact</a>
