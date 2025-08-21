@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post("https://my-backend.onrender.com/send-mail", async (req, res) => {
+app.post("/send-mail", async (req, res) => {
   const { name, email, phone, message } = req.body;
 
   try {
