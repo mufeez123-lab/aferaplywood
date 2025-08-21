@@ -51,7 +51,7 @@ const HeroSection = () => {
           className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-xl shadow-lg w-max"
           variants={fadeUpItem}
         >
-          <Link to="/products">View Products</Link>
+          <Link to="/whyafera">View Products</Link>
         </motion.button>
       </motion.div>
 

@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Products from "./pages/Products";
+import Products from "./pages/whyafera";
 import Brands from "./pages/Brands";
 import Contact from "./pages/Contact";
 
@@ -62,7 +62,7 @@ function App() {
               <ul className="p-4 space-y-4">
                 <li><a href="/" onClick={() => setSidebarOpen(false)}>Home</a></li>
                 <li><a href="/about" onClick={() => setSidebarOpen(false)}>About Us</a></li>
-                <li><a href="/products" onClick={() => setSidebarOpen(false)}>Products</a></li>
+                <li><a href="/whyafera" onClick={() => setSidebarOpen(false)}>Products</a></li>
                 <li><a href="/brands" onClick={() => setSidebarOpen(false)}>Brands</a></li>
                 <li><a href="/contact" onClick={() => setSidebarOpen(false)}>Contact</a></li>
               </ul>
@@ -72,7 +72,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/products" element={<Products />} />
+                <Route path="/whyafera" element={<Products />} />
                 <Route path="/brands" element={<Brands />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
