@@ -20,7 +20,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-xl font-semibold font-edu italic mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="/" className="hover:underline">Home</a></li>
             <li><a href="/about" className="hover:underline">About Us</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+          <h3 className="text-xl font-semibold font-edu italic mb-4">Contact Us</h3>
           <p className="flex items-center gap-2 text-sm mb-2">
             <MapPin size={18} /> Mangalore, Karnataka, India
           </p>
