@@ -91,7 +91,7 @@ export default function Hero() {
 
           {/* Call Button */}
           <a
-            href="tel:+911234567890"
+            href="tel:+918951555551"
             className="bg-green-600 border-t border-l border-b hover:bg-green-700 text-white px-2 py-2 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
           >
             <FiPhone size={20} />
