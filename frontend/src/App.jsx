@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Products from "./pages/whyafera";
+import Products from "./pages/Products";
 import Brands from "./pages/Brands";
 import Contact from "./pages/Contact";
 
