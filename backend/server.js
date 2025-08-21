@@ -3,25 +3,33 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL, // frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  origin: process.env.FRONTEND_URL,
+  methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
   credentials: true
 }));
 
-app.options("*", cors());
+app.options("*", cors({
+  origin: process.env.FRONTEND_URL,
+  methods: ["GET","POST","OPTIONS"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
+
 app.use(express.json());
 
-// Replace with your email credentials
+// Nodemailer setup
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "mufizmalar@gmail.com", // your email
-    pass: "ykkq zxqp lwun zyjw",   // Gmail app password
+    user: "mufizmalar@gmail.com", 
+    pass: "ykkq zxqp lwun zyjw",
   },
 });
 
+// Contact form route
 app.post("/send-mail", async (req, res) => {
   const { name, email, phone, message } = req.body;
 
@@ -29,7 +37,7 @@ app.post("/send-mail", async (req, res) => {
     // Send email to admin
     await transporter.sendMail({
       from: email,
-      to: "target-email@gmail.com", 
+      to: "mufizmalar@gmail.com", 
       subject: `Customer contact from Afera Plywood from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
       html: `
@@ -40,10 +48,9 @@ app.post("/send-mail", async (req, res) => {
       `,
     });
 
-    // Respond immediately to frontend
     res.status(200).json({ success: true, message: "Message sent successfully!" });
 
-    // Send thank-you email to the user after 20 seconds
+    // Send thank-you email after 20 seconds
     setTimeout(async () => {
       try {
         await transporter.sendMail({
@@ -56,11 +63,11 @@ app.post("/send-mail", async (req, res) => {
             <p>Best regards,<br/>Afera Plywood Team</p>
           `,
         });
-        console.log(`Thank you email sent to ${email}`);
+        console.log(`Thank-you email sent to ${email}`);
       } catch (err) {
         console.error("Failed to send thank-you email:", err);
       }
-    }, 20000); // 20 seconds delay
+    }, 20000);
 
   } catch (error) {
     console.error(error);
@@ -68,4 +75,6 @@ app.post("/send-mail", async (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+// Dynamic port
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
