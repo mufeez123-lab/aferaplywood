@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors({
-  origin: "https://aferaplywood.vercel.app", // frontend URL
+  origin: process.env.FRONTEND_URL, // frontend URL
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
   credentials: true
