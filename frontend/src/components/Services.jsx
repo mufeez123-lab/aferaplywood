@@ -57,7 +57,7 @@ const Services = () => {
         {services.map((service, index) => (
           <motion.div
             key={service.id}
-            className="bg-yellow-50 rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className=" rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-shadow duration-300"
             variants={fadeUpVariant}
             initial="hidden"
             whileInView="visible"
