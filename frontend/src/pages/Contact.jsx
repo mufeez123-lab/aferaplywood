@@ -22,7 +22,7 @@ const ContactPage = () => {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("https://my-backend.onrender.com/send-mail", {
+      const res = await fetch("https://aferaplywood.onrender.com/send-mail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
