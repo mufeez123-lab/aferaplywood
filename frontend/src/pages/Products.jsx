@@ -14,7 +14,7 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.15, // stagger animation for each image
+      staggerChildren: 0.15,
     },
   },
 };
@@ -34,7 +34,7 @@ const Products = () => {
 
       {/* Product Grid */}
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-12"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-0 md:px-6"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -43,7 +43,7 @@ const Products = () => {
         {products.map((product) => (
           <motion.div
             key={product.id}
-            className="relative rounded-2xl overflow-hidden shadow-lg h-72 sm:h-80 md:h-96 w-full"
+            className="relative w-full h-screen sm:h-screen md:h-screen rounded-2xl overflow-hidden shadow-lg"
             variants={itemVariants}
           >
             <img
