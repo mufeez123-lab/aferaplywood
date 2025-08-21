@@ -3,7 +3,12 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://aferaplywood.vercel.app", // frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
 app.use(express.json());
 
 // Replace with your email credentials
