@@ -48,7 +48,7 @@ const HeroSection = () => {
 
         {/* Button */}
         <motion.button
-          className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-xl shadow-lg w-max"
+          className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3  shadow-lg w-max"
           variants={fadeUpItem}
         >
           <Link to="/whyafera">View Products</Link>

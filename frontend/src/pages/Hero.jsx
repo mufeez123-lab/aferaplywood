@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from "react-router-dom";
+import { FiPhone, FiMessageSquare } from 'react-icons/fi'; // Phone & WhatsApp icons
 
 export default function Hero() {
   const images = ['/images/afera.jpg', '/images/afera1.jpg', '/images/afera2.jpg'];
@@ -49,11 +50,11 @@ export default function Hero() {
           ))}
         </div>
 
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black opacity-26"></div>
 
         {/* Animated text content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4 max-w-4xl mx-auto text-center">
-          {/* Logo with fade-up animation */}
           <motion.img
             src="/images/aferalogo.png"
             alt="Afera Logo"
@@ -78,18 +79,36 @@ export default function Hero() {
           </AnimatePresence>
         </div>
 
-        {/* Floating Enquire Now Button */}
-       <Link
-      to="/contact"
-      className="fixed top-1/3 right-0 bg-transparent border-t border-l border-b hover:bg-red-700 text-white px-2 py-3 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr]"
-    >
-      Enquire Now
-    </Link>
+        {/* Floating buttons */}
+        <div className="fixed top-1/3 right-0 flex flex-col gap-2 z-20">
+          {/* Enquire Now */}
+          <Link
+            to="/contact"
+            className="bg-transparent border-t border-l border-b hover:bg-red-700 text-white px-2 py-3 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
+          >
+            Enquire Now
+          </Link>
 
+          {/* Call Button */}
+          <a
+            href="tel:+911234567890"
+            className="bg-green-600 border-t border-l border-b hover:bg-green-700 text-white px-2 py-2 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
+          >
+            <FiPhone size={20} />
 
+          </a>
 
+          {/* WhatsApp Button */}
+          <a
+  href="https://wa.me/911234567890"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#25D366] border-t border-l border-b hover:bg-green-500 text-white px-2 py-2 rounded-l-lg shadow-lg font-semibold transition duration-300 [writing-mode:vertical-lr] flex items-center justify-center gap-1"
+>
+  <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5" />
+</a>
 
-
+        </div>
       </section>
     </>
   );

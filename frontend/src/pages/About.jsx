@@ -47,6 +47,7 @@ const About = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
       >
+        {/* <div className="absolute inset-0 bg-yellow-400 opacity-30 pointer-events-none"></div> */}
         {/* Title */}
         <motion.h1
           className="text-3xl md:text-4xl font-playfair text-yellow-700 italic text-center mb-4"
@@ -160,7 +161,7 @@ const About = () => {
             quality. Our journey has been one of excellence, innovation, and
             customer satisfaction, which fills me with pride.
           </p>
-          <p className="text-gray-600 font-semibold">Afzal Yunus, Chairman</p>
+          <p className="text-gray-600 font-semibold">Kaleel, Chairman</p>
         </motion.div>
 
         {/* Image */}

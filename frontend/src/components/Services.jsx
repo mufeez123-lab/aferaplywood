@@ -42,15 +42,19 @@ const Services = () => {
   return (
     <section className="w-full bg-white py-16 px-6 sm:px-10 mt-38">
       {/* Heading */}
-      <motion.h2
-        className="text-3xl md:text-4xl font-bold text-center text-yellow-600 mb-12"
-        variants={fadeUpVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-      >
-        Our Services
-      </motion.h2>
+      <motion.div
+  className="text-center mb-12"
+  variants={fadeUpVariant}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.2 }}
+>
+  <h2 className="text-3xl md:text-4xl font-bold text-yellow-600">
+    Our Services
+  </h2>
+  <div className="mt-2 w-24 h-1 bg-yellow-600 mx-auto rounded"></div>
+</motion.div>
+
 
       {/* Services Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
@@ -62,7 +66,7 @@ const Services = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.4, delay: index * 0.2 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
           >
             {/* Icon */}
             <div className="flex justify-center mb-4">{service.icon}</div>

@@ -12,9 +12,13 @@ const clients = [
 const Clients = () => {
   return (
     <section className="w-full bg-white py-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-yellow-600 mb-12">
-        Our Clients
-      </h2>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-yellow-600">
+          Our Clients
+        </h2>
+        {/* Center underline */}
+        <div className="w-20 h-1 bg-yellow-600 mx-auto mt-2 rounded"></div>
+      </div>
 
       {/* Logo Slider */}
       <div className="relative overflow-hidden">
