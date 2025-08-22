@@ -70,7 +70,7 @@ export default function Navbar() {
         <div
           className={`md:hidden px-4 overflow-hidden transition-all duration-500 ease-in-out`}
           style={{
-            backgroundColor: '#ffffffff',
+            backgroundColor: '#fecc03ff',
             maxHeight: isOpen ? '500px' : '0px',
             opacity: isOpen ? 1 : 0,
           }}
